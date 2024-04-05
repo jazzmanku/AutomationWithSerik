@@ -10,7 +10,11 @@ import org.testng.annotations.*;
 import utils.Helper;
 import utils.OptionsManager;
 
+import java.io.IOException;
 import java.time.Duration;
+
+import static utils.Helper.addLogging;
+import static utils.Helper.writeOutputData;
 
 public class TestBase {
     public WebDriver driver;
@@ -18,6 +22,8 @@ public class TestBase {
     final String DEFAULT_BROWSER_VALUE = "";
     final String DEFAULT_INCOGNITO_VALUE = "";
     private boolean RUN_FROM_PROPS_FILE = true;
+
+    StringBuffer stringBuffer = new StringBuffer();
 
     @BeforeSuite
     public void SetPreReqValues(){
@@ -32,6 +38,10 @@ public class TestBase {
         System.out.println("Browser : " + browser);
         System.out.println("Browser : " + headless);
         System.out.println("Browser : " + incognito);
+
+        addLogging(stringBuffer);
+        stringBuffer.append("RUN_FROM_PROPS_FILE:" +RUN_FROM_PROPS_FILE + "\n");
+
         if(!browser.equals("") && !headless.equals("") && !incognito.equals(""))
             RUN_FROM_PROPS_FILE = false;
         Setup(browser,headless, incognito);
@@ -94,7 +104,8 @@ public class TestBase {
     }
 
     @AfterTest
-    public void TearDown() throws InterruptedException {
+    public void TearDown() throws InterruptedException, IOException {
+        writeOutputData(stringBuffer.toString());
         Thread.sleep(3000);
         driver.quit();
     }

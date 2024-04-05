@@ -16,6 +16,7 @@ public class UiTest extends TestBase {
         WebElement radioButton = driver.findElement(By.id("Are_you_excited_For_Automation_Testing__No"));
         radioButton.click();
         Assert.assertTrue(radioButton.isSelected());
+        stringBuffer.append("Test Case .........: Status: PASS" +"\n");
     }
 
     @Test(enabled = false)
@@ -24,6 +25,7 @@ public class UiTest extends TestBase {
         WebElement checkBox = driver.findElement(By.id("What_is_your_dream_job__100K_Job"));
         checkBox.click();
         Assert.assertTrue(checkBox.isSelected());
+        stringBuffer.append("Test Case .........: Status: PASS" +"\n");
     }
 
     @Test
