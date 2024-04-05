@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 import utils.Helper;
 import utils.OptionsManager;
@@ -35,15 +36,16 @@ public class TestBase {
     public void setupTest(@Optional(DEFAULT_BROWSER_VALUE) String browser,
                           @Optional(DEFAULT_HEADLESS_VALUE) String headless,
                           @Optional(DEFAULT_INCOGNITO_VALUE) String incognito) throws InterruptedException {
-        System.out.println("Browser : " + browser);
-        System.out.println("Browser : " + headless);
-        System.out.println("Browser : " + incognito);
-
         addLogging(stringBuffer);
         stringBuffer.append("RUN_FROM_PROPS_FILE:" +RUN_FROM_PROPS_FILE + "\n");
 
-        if(!browser.equals("") && !headless.equals("") && !incognito.equals(""))
+        if(!browser.equals("") && !headless.equals("") && !incognito.equals("")){
+            System.out.println("Browser : " + browser);
+            System.out.println("Headless : " + headless);
+            System.out.println("Incognito : " + incognito);
             RUN_FROM_PROPS_FILE = false;
+        }
+
         Setup(browser,headless, incognito);
 
     }
@@ -108,5 +110,22 @@ public class TestBase {
         writeOutputData(stringBuffer.toString());
         Thread.sleep(3000);
         driver.quit();
+    }
+
+    @AfterMethod
+    public void TakeScreenshotOnFailure(ITestResult result){
+        String screenshotPath ="";
+        stringBuffer.append("Test Case .........: Status: FAIL" +"\n");
+        if(ITestResult.FAILURE == result.getStatus()){
+            String testCaseName = result.getName();
+            try{
+                Helper helper = new Helper();
+                screenshotPath = helper.takeScreenCapture(testCaseName, driver);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            stringBuffer.append("ScreenShot Saved : "+ screenshotPath +"\n");
+
+        }
     }
 }

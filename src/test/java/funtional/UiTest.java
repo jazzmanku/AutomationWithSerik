@@ -7,7 +7,15 @@ import org.testng.annotations.Test;
 import utils.Helper;
 
 public class UiTest extends TestBase {
-
+    /*
+    April 9th
+    1. Add a functionality to setup method
+        Run via testng
+        Run via IDE
+    2. Retry tests
+    3. Screenshots
+    4. Logging
+     */
 
     @Test(enabled = true)
     public void TestRadio() throws InterruptedException {
@@ -15,7 +23,7 @@ public class UiTest extends TestBase {
         // Are you excited For Automation Testing?
         WebElement radioButton = driver.findElement(By.id("Are_you_excited_For_Automation_Testing__No"));
         radioButton.click();
-        Assert.assertTrue(radioButton.isSelected());
+        Assert.assertTrue(!radioButton.isSelected());
         stringBuffer.append("Test Case .........: Status: PASS" +"\n");
     }
 

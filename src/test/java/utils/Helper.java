@@ -1,6 +1,11 @@
 package utils;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+
 import java.io.*;
+import java.nio.file.Files;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -68,4 +73,12 @@ public class Helper {
         return dateFormat.format(timestamp);
     }
 
+    public String takeScreenCapture(String testCaseName, WebDriver driver) throws IOException {
+        String fileName = "./screenshots/"+ testCaseName + "_" + getTimeStamp() + ".jpg";
+        TakesScreenshot screenshot = (TakesScreenshot) driver;
+        File screenShotFile = screenshot.getScreenshotAs(OutputType.FILE);
+        File destinationFile = new File (fileName);
+        Files.copy(screenShotFile.toPath(), destinationFile.toPath());
+        return destinationFile.getAbsolutePath();
+    }
 }
