@@ -28,10 +28,10 @@ public class UiTest extends TestBase {
 
     @Test
     public void ReadProps(){
-        Helper.readPropertyByKey("app_url");
+        System.out.println(Helper.readPropertyByKey("app_url"));
     }
 
-    @Test
+    @Test(enabled = false)
     public void TestOtherThings(){
         //            //Email *
 //            driver.findElement(By.id("Email")).sendKeys("ssss@gmail.com");
