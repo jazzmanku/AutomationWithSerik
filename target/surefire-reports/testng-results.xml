@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="7" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-02T22:03:51 EDT" name="All Test Suite" finished-at="2024-04-02T22:04:04 EDT" duration-ms="12995">
+    <groups>
+      <group name="Sanity">
+        <method signature="JavaQuesTest.Test4()[pri:0, instance:com.tat.JavaQuesTest@3c407114]" name="Test4" class="com.tat.JavaQuesTest"/>
+        <method signature="JavaQuesTest.Test5()[pri:0, instance:com.tat.JavaQuesTest@3c407114]" name="Test5" class="com.tat.JavaQuesTest"/>
+        <method signature="JavaQuesTest.Test6()[pri:0, instance:com.tat.JavaQuesTest@3c407114]" name="Test6" class="com.tat.JavaQuesTest"/>
+        <method signature="JavaQuesTest.Test7()[pri:0, instance:com.tat.JavaQuesTest@3c407114]" name="Test7" class="com.tat.JavaQuesTest"/>
+      </group> <!-- Sanity -->
+    </groups>
+    <test started-at="2024-04-02T22:03:51 EDT" name="TestNG Tests" finished-at="2024-04-02T22:04:04 EDT" duration-ms="12995">
+      <class name="com.tat.JavaQuesTest">
+        <test-method signature="Test4()[pri:0, instance:com.tat.JavaQuesTest@3c407114]" started-at="2024-04-02T22:03:51 EDT" name="Test4" finished-at="2024-04-02T22:03:53 EDT" duration-ms="2755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test4 -->
+        <test-method signature="Test5()[pri:0, instance:com.tat.JavaQuesTest@3c407114]" started-at="2024-04-02T22:03:53 EDT" name="Test5" finished-at="2024-04-02T22:03:56 EDT" duration-ms="2117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test5 -->
+        <test-method signature="Test6()[pri:0, instance:com.tat.JavaQuesTest@3c407114]" started-at="2024-04-02T22:03:56 EDT" name="Test6" finished-at="2024-04-02T22:04:00 EDT" duration-ms="4302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test6 -->
+        <test-method signature="Test7()[pri:0, instance:com.tat.JavaQuesTest@3c407114]" started-at="2024-04-02T22:04:00 EDT" name="Test7" finished-at="2024-04-02T22:04:04 EDT" duration-ms="3771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test7 -->
+      </class> <!-- com.tat.JavaQuesTest -->
+    </test> <!-- TestNG Tests -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

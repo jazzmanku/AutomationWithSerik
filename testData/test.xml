@@ -1,0 +1,12 @@
+70, 71, true
+70, 81, false
+80, 90, true
+80, 91, false
+79, 90, false
+90, 79, false
+80, 79, true
+89, 88, true
+90, 80, true
+90, 91, false
+75, 76, true
+75, 85, false
