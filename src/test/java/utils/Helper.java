@@ -11,7 +11,13 @@ public class Helper {
 //        System.out.println(System.getProperty("user.dir"));
 //        System.out.println(System.getProperty("user.name"));
         String value = "";
-        try(InputStream input = new FileInputStream(System.getProperty("user.dir") + "\\appsettings.properties")){
+        String slashType = "/";
+        if(System.getProperty("os.name").toLowerCase().contains("windows")){
+            slashType = "\\";
+        }
+        String settingFilePath = System.getProperty("user.dir") + slashType + "appsettings.properties";
+
+        try(InputStream input = new FileInputStream(settingFilePath)){
             Properties properties = new Properties();
             properties.load(input);
             value = properties.getProperty(key);
