@@ -1,0 +1,157 @@
+------------------------------ Test Results ------------------------------
+Run Time...............: 2024-04-09_21:54:23
+Operating System.......: Linux
+OS Version.............: 6.5.0-26-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 20
+RUN_FROM_PROPS_FILE:true
+------------------------------ Test Results ------------------------------
+Run Time...............: 2024-04-09_22:23:32
+Operating System.......: Linux
+OS Version.............: 6.5.0-26-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 20
+RUN_FROM_PROPS_FILE:.....true
+------------------------------ Test Results ------------------------------
+Run Time...............: 2024-04-09_22:24:13
+Operating System.......: Linux
+OS Version.............: 6.5.0-26-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 20
+RUN_FROM_PROPS_FILE:.....true
+------------------------------ Test Results ------------------------------
+Run Time...............: 2024-04-09_22:29:09
+Operating System.......: Linux
+OS Version.............: 6.5.0-26-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 20
+RUN_FROM_PROPS_FILE:....:true
+Test Name...............:null
+Is Test Passed?.........:true
+Total test run time.....:0 seconds
+------------------------------ Test Results ------------------------------
+Run Time...............: 2024-04-09_22:30:16
+Operating System.......: Linux
+OS Version.............: 6.5.0-26-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 20
+RUN_FROM_PROPS_FILE:....:true
+Test Name...............:null
+Is Test Passed?.........:true
+Total test run time.....:97 milliseconds
+------------------------------ Test Results ------------------------------
+Run Time...............: 2024-04-09_22:31:16
+Operating System.......: Linux
+OS Version.............: 6.5.0-26-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 20
+RUN_FROM_PROPS_FILE:....:true
+Test Name...............:TestRadio
+Is Test Passed?.........:true
+Total test run time.....:101 milliseconds
+------------------------------ Test Results ------------------------------
+Run Time...............: 2024-04-09_22:33:01
+Operating System.......: Linux
+OS Version.............: 6.5.0-26-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 20
+RUN_FROM_PROPS_FILE:....:true
+Test Name...............:TestRadio
+Test Pass status........:false
+Total test run time.....:101 milliseconds
+Test Case .........: Status: FAIL
+ScreenShot Saved : /home/theautomationtechies/git/AutomationWithSerik/./screenshots/TestRadio_2024-04-09_22:33:10.jpg
+------------------------------ Test Results ------------------------------
+Run Time...............: 2024-04-09_22:36:24
+Operating System.......: Linux
+OS Version.............: 6.5.0-26-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 20
+RUN_FROM_PROPS_FILE:....:true
+Test Name...............:TestRadio
+Test Pass status........:false
+Total test run time.....:578 milliseconds
+Test Case .........: Status: FAIL
+ScreenShot Saved : /home/theautomationtechies/git/AutomationWithSerik/./screenshots/TestRadio_2024-04-09_22:36:33.jpg
+------------------------------ Test Results ------------------------------
+Run Time...............: 2024-04-09_22:54:07
+Operating System.......: Linux
+OS Version.............: 6.5.0-26-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 20
+RUN_FROM_PROPS_FILE:....:true
+Test Name...............:TestRadio
+Test Pass status........:false
+Total test run time.....:97 milliseconds
+Test Name...............:TestRadio
+Test Pass status........:false
+Total test run time.....:83 milliseconds
+Test Name...............:TestRadio
+Test Pass status........:false
+Total test run time.....:83 milliseconds
+Test Case .........: Status: FAIL
+ScreenShot Saved : /home/theautomationtechies/git/AutomationWithSerik/./screenshots/TestRadio_2024-04-09_22:54:15.jpg
+------------------------------ Test Results ------------------------------
+Run Time...............: 2024-04-09_22:58:21
+Operating System.......: Linux
+OS Version.............: 6.5.0-26-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 20
+RUN_FROM_PROPS_FILE:....:true
+Test Name...............:TestRadio
+Test Pass status........:false
+Total test run time.....:106 milliseconds
+------------------------------ Test Results ------------------------------
+Run Time...............: 2024-04-09_22:59:11
+Operating System.......: Linux
+OS Version.............: 6.5.0-26-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 20
+RUN_FROM_PROPS_FILE:....:true
+Test Name...............:TestRadio
+Test Pass status........:false
+Total test run time.....:98 milliseconds
+Test Name...............:TestRadio
+Test Pass status........:false
+Total test run time.....:82 milliseconds
+Test Name...............:TestRadio
+Test Pass status........:false
+Total test run time.....:75 milliseconds
+Test Case .........: Status: FAIL
+ScreenShot Saved : /home/theautomationtechies/git/AutomationWithSerik/./screenshots/TestRadio_2024-04-09_22:59:20.jpg
+------------------------------ Test Results ------------------------------
+Run Time...............: 2024-04-09_23:00:21
+Operating System.......: Linux
+OS Version.............: 6.5.0-26-generic
+User Home Dir..........: /home/theautomationtechies
+User Name..............: theautomationtechies
+JDK Version............: 20
+RUN_FROM_PROPS_FILE:....:true
+Test Name...............:ReadProps
+Test Pass status........:true
+Total test run time.....:2 milliseconds
+Test Name...............:TestCheckbox
+Test Pass status........:true
+Total test run time.....:98 milliseconds
+Test Name...............:TestRadio
+Test Pass status........:false
+Total test run time.....:95 milliseconds
+Test Name...............:TestRadio
+Test Pass status........:false
+Total test run time.....:86 milliseconds
+Test Name...............:TestRadio
+Test Pass status........:false
+Total test run time.....:84 milliseconds
+Test Case .........: Status: FAIL
+ScreenShot Saved : /home/theautomationtechies/git/AutomationWithSerik/./screenshots/TestRadio_2024-04-09_23:00:46.jpg

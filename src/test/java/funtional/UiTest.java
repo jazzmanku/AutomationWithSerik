@@ -1,24 +1,26 @@
 package funtional;
 
+import flakytests.RetryAnalyzer;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.Helper;
 
+import java.io.IOException;
+
 public class UiTest extends TestBase {
-
-
-    @Test(enabled = true)
-    public void TestRadio() throws InterruptedException {
+    @Test(retryAnalyzer = RetryAnalyzer.class)
+    public void TestRadio() throws InterruptedException, IOException {
+        String methodName = "TestRadio";
         // First test run
         // Are you excited For Automation Testing?
         WebElement radioButton = driver.findElement(By.id("Are_you_excited_For_Automation_Testing__No"));
         radioButton.click();
-        Assert.assertTrue(radioButton.isSelected());
+        Assert.assertTrue(!radioButton.isSelected());
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void TestCheckbox(){
         //What is your dream job?
         WebElement checkBox = driver.findElement(By.id("What_is_your_dream_job__100K_Job"));
@@ -28,10 +30,10 @@ public class UiTest extends TestBase {
 
     @Test
     public void ReadProps(){
-        Helper.readPropertyByKey("app_url");
+        System.out.println(Helper.readPropertyByKey("dev_app_url"));
     }
 
-    @Test
+    @Test(enabled = false)
     public void TestOtherThings(){
         //            //Email *
 //            driver.findElement(By.id("Email")).sendKeys("ssss@gmail.com");

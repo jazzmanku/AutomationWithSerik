@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="TestNG Tests">
-        <groups>
-            <run>
-                <include name="Regression"></include>
-            </run>
-        </groups>
+
+    <!-- This set runs on Chrome-->
+    <test verbose="2" preserve-order="true" name="Chrome Tests">
+        <parameter name="browser" value="chrome" />
+        <parameter name="headless" value="false" />
+        <parameter name="incognito" value="true" />
         <classes>
-            <class name="com.tat.JavaQuesTest"/>
+            <class name="funtional.UiTest"/>
+        </classes>
+    </test>
+
+    <!-- This set runs on Firefox-->
+    <test verbose="2" preserve-order="true" name="Firefox tests">
+        <parameter name="browser" value="firefox" />
+        <parameter name="headless" value="false" />
+        <parameter name="incognito" value="true" />
+        <classes>
+            <class name="funtional.UiTest"/>
         </classes>
     </test>
 </suite>
