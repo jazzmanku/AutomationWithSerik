@@ -17,7 +17,7 @@ public class UiTest extends TestBase {
         // Are you excited For Automation Testing?
         WebElement radioButton = driver.findElement(By.id("Are_you_excited_For_Automation_Testing__No"));
         radioButton.click();
-        Assert.assertTrue(!radioButton.isSelected());
+        Assert.assertTrue(radioButton.isSelected());
     }
 
     @Test(enabled = true)

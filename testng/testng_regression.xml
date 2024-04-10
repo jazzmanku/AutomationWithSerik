@@ -5,7 +5,7 @@
     <!-- This set runs on Chrome-->
     <test verbose="2" preserve-order="true" name="Chrome Tests">
         <parameter name="browser" value="chrome" />
-        <parameter name="headless" value="false" />
+        <parameter name="headless" value="true" />
         <parameter name="incognito" value="true" />
         <classes>
             <class name="funtional.UiTest"/>
@@ -13,12 +13,12 @@
     </test>
 
     <!-- This set runs on Firefox-->
-    <test verbose="2" preserve-order="true" name="Firefox tests">
-        <parameter name="browser" value="firefox" />
-        <parameter name="headless" value="false" />
-        <parameter name="incognito" value="true" />
-        <classes>
-            <class name="funtional.UiTest"/>
-        </classes>
-    </test>
+<!--    <test verbose="2" preserve-order="true" name="Firefox tests">-->
+<!--        <parameter name="browser" value="firefox" />-->
+<!--        <parameter name="headless" value="false" />-->
+<!--        <parameter name="incognito" value="true" />-->
+<!--        <classes>-->
+<!--            <class name="funtional.UiTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>

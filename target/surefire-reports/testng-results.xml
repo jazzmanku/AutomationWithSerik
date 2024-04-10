@@ -1,37 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-09T21:25:39 EDT" name="All Test Suite" finished-at="2024-04-09T21:25:51 EDT" duration-ms="12164">
+  <suite started-at="2024-04-09T23:15:57 EDT" name="All Test Suite" finished-at="2024-04-09T23:16:10 EDT" duration-ms="12095">
     <groups>
     </groups>
-    <test started-at="2024-04-09T21:25:39 EDT" name="TestNG Tests" finished-at="2024-04-09T21:25:51 EDT" duration-ms="12164">
+    <test started-at="2024-04-09T23:15:57 EDT" name="Chrome Tests" finished-at="2024-04-09T23:16:10 EDT" duration-ms="12095">
       <class name="funtional.UiTest">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:funtional.UiTest@76508ed1]" started-at="2024-04-09T21:25:39 EDT" name="Setup" finished-at="2024-04-09T21:25:48 EDT" duration-ms="8823" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:funtional.UiTest@3d51f06e]" started-at="2024-04-09T23:15:57 EDT" name="setupTest" finished-at="2024-04-09T23:16:06 EDT" duration-ms="8802" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="ReadProps()[pri:0, instance:funtional.UiTest@76508ed1]" started-at="2024-04-09T21:25:48 EDT" name="ReadProps" finished-at="2024-04-09T21:25:48 EDT" duration-ms="1" status="PASS">
+        </test-method> <!-- setupTest -->
+        <test-method signature="ReadProps()[pri:0, instance:funtional.UiTest@3d51f06e]" started-at="2024-04-09T23:16:06 EDT" name="ReadProps" finished-at="2024-04-09T23:16:06 EDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReadProps -->
-        <test-method signature="TestCheckbox()[pri:0, instance:funtional.UiTest@76508ed1]" started-at="2024-04-09T21:25:48 EDT" name="TestCheckbox" finished-at="2024-04-09T21:25:48 EDT" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="TakeScreenshotOnFailure(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:funtional.UiTest@3d51f06e]" started-at="2024-04-09T23:16:06 EDT" name="TakeScreenshotOnFailure" finished-at="2024-04-09T23:16:06 EDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ReadProps status=SUCCESS method=UiTest.ReadProps()[pri:0, instance:funtional.UiTest@3d51f06e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void funtional.UiTest.ReadProps()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeScreenshotOnFailure -->
+        <test-method signature="TestCheckbox()[pri:0, instance:funtional.UiTest@3d51f06e]" started-at="2024-04-09T23:16:06 EDT" name="TestCheckbox" finished-at="2024-04-09T23:16:06 EDT" duration-ms="90" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCheckbox -->
-        <test-method signature="TestOtherThings()[pri:0, instance:funtional.UiTest@76508ed1]" started-at="2024-04-09T21:25:48 EDT" name="TestOtherThings" finished-at="2024-04-09T21:25:48 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="TakeScreenshotOnFailure(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:funtional.UiTest@3d51f06e]" started-at="2024-04-09T23:16:06 EDT" name="TakeScreenshotOnFailure" finished-at="2024-04-09T23:16:06 EDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestCheckbox status=SUCCESS method=UiTest.TestCheckbox()[pri:0, instance:funtional.UiTest@3d51f06e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void funtional.UiTest.TestCheckbox()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestOtherThings -->
-        <test-method signature="TestRadio()[pri:0, instance:funtional.UiTest@76508ed1]" started-at="2024-04-09T21:25:48 EDT" name="TestRadio" finished-at="2024-04-09T21:25:48 EDT" duration-ms="87" status="PASS">
+        </test-method> <!-- TakeScreenshotOnFailure -->
+        <test-method signature="TestRadio()[pri:0, instance:funtional.UiTest@3d51f06e]" started-at="2024-04-09T23:16:06 EDT" name="TestRadio" finished-at="2024-04-09T23:16:06 EDT" duration-ms="75" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestRadio -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:funtional.UiTest@76508ed1]" started-at="2024-04-09T21:25:48 EDT" name="TearDown" finished-at="2024-04-09T21:25:51 EDT" duration-ms="3094" status="PASS">
+        <test-method is-config="true" signature="TakeScreenshotOnFailure(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:funtional.UiTest@3d51f06e]" started-at="2024-04-09T23:16:06 EDT" name="TakeScreenshotOnFailure" finished-at="2024-04-09T23:16:06 EDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestRadio status=SUCCESS method=UiTest.TestRadio()[pri:0, instance:funtional.UiTest@3d51f06e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void funtional.UiTest.TestRadio() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeScreenshotOnFailure -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:funtional.UiTest@3d51f06e]" started-at="2024-04-09T23:16:06 EDT" name="TearDown" finished-at="2024-04-09T23:16:10 EDT" duration-ms="3087" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- funtional.UiTest -->
-    </test> <!-- TestNG Tests -->
+    </test> <!-- Chrome Tests -->
   </suite> <!-- All Test Suite -->
 </testng-results>

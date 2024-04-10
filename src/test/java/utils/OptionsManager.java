@@ -11,7 +11,8 @@ public class OptionsManager {
     public static ChromeOptions getChromeOptions(boolean isHeadless, boolean isCognito){
         ChromeOptions options = new ChromeOptions();
         if(isHeadless)
-            options.addArguments("--headless");
+            options.addArguments("--headless=new");
+            //options.addArguments("--headless");
         if(isCognito)
             options.addArguments("--incognito");
         options.addArguments("--start-maximized");
